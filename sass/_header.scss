@@ -1,0 +1,13 @@
+@use 'variables';
+
+header {
+    background-color: variables.$color1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-left: -8%;
+    width: 35%;
+}
