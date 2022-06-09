@@ -23,6 +23,9 @@
         </header>
         <main>
             <div class="slider">
+                <div class="pointer">
+                    <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+                </div>
                 <div class="slider-viewport">
                     <div class="slider-content">
                         <img class="mySlides" src="img/Header_RV_Desktop.jpg" alt="Starlink pour camping cars">
@@ -31,16 +34,23 @@
                         <img class="mySlides" src="img/Premium_Module_03.jpg" alt="Starlink pour entreprise">
                     </div>
                 </div>
-                <div class="slider-nav">
-                    <a href="#img1" aria-label="Image défilante de Starlink"></a>
-                    <a href="#img2" aria-label="Image défilante de Starlink"></a>
-                    <a href="#img3" aria-label="Image défilante de Starlink"></a>
-                    <a href="#img4" aria-label="Image défilante de Starlink"></a>
+                <div class="pointer">
+                    <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
                 </div>
             </div>
+            <div class="slider-nav">
+                <a href="#img1" onclick="currentDiv(1)" aria-label="Image défilante de Starlink"></a>
+                <a href="#img2" onclick="currentDiv(2)" aria-label="Image défilante de Starlink"></a>
+                <a href="#img3" onclick="currentDiv(3)" aria-label="Image défilante de Starlink"></a>
+                <a href="#img4" onclick="currentDiv(4)" aria-label="Image défilante de Starlink"></a>
+            </div>
+
         </main>
         <footer>
 
         </footer>
     </div>
 </body>
+</html>
+<script src="js/script.js"></script>
+
