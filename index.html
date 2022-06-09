@@ -7,23 +7,71 @@
     <title>TP1</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="#"><img src="img/logo_x_white.png" alt="logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li class="menu-item"><a href="#">Menu 1</a></li>
-                <li class="menu-item"><a href="#">Menu 2</a></li>
-                <li class="menu-item"><a href="#">Menu 3</a></li>
-                <li class="menu-item"><a href="#">Menu 4</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="img/logo_x_white-modified.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="menu-item"><a href="#">Menu 1</a></li>
+                    <li class="menu-item"><a href="#">Menu 2</a></li>
+                    <li class="menu-item"><a href="#">Menu 3</a></li>
+                    <li class="menu-item"><a href="#">Menu 4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="slider">
+                <div class="slider-viewport">
+                    <div class="slider-content">
+                        <img class="mySlides" src="img/Header_RV_Desktop.jpg" alt="Starlink pour camping cars">
+                        <img class="mySlides" src="img/Marketing_LandingEngineered.jpg" alt="Starlink conçu par spacex">
+                        <img class="mySlides" src="img/Marketing_LandingRural_Next.jpg" alt="Starlink résidentiel">
+                        <img class="mySlides" src="img/Premium_Module_03.jpg" alt="Starlink pour entreprise">
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <a href="#img1" aria-label="Image défilante de Starlink"></a>
+                    <a href="#img2" aria-label="Image défilante de Starlink"></a>
+                    <a href="#img3" aria-label="Image défilante de Starlink"></a>
+                    <a href="#img4" aria-label="Image défilante de Starlink"></a>
+                </div>
+            </div>
+        </main>
+        <footer>
 
-    </main>
-    <footer>
+        </footer>
+    </div>
 
-    </footer>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+}
+        
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+        }
+        </script> 
+    
+
 </body>

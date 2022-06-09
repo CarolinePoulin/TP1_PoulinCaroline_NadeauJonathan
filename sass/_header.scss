@@ -5,9 +5,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    img {
+        width: 35%;
+    }
 }
 
-header img {
-    margin-left: -8%;
-    width: 35%;
+nav {
+    li {
+        display: inline-block;
+    }
+    a {
+        display: inline-block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: variables.$color5;
+    }
+    a:hover {
+        color: variables.$color4;
+    }
 }
