@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 /***
     The new CSS reset - version 1.6.0 (last updated 29.4.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -82,6 +83,20 @@ meter {
 /* apply back the draggable feature - exist only in Chromium and Safari */
 :where([draggable="true"]) {
   -webkit-user-drag: element;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
