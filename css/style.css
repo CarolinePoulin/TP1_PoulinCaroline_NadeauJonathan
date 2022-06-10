@@ -104,21 +104,32 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
-
 header img {
-  margin-left: -8%;
   width: 35%;
+  margin-left: 10px;
 }
 
-body {
-  background-color: #1e1f26;
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #FBFBFB;
+}
+nav a:hover {
+  color: #716969;
 }
 
 .slider {
   width: 800px;
   margin: 30px auto;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .slider-viewport {
@@ -136,25 +147,39 @@ body {
   width: 800px;
   height: 400px;
 }
+.slider-content img .myslides {
+  display: none;
+}
 
 .slider-nav {
-  position: absolute;
   width: 100%;
   bottom: -30px;
   margin-top: 10px;
   text-align: center;
 }
 .slider-nav a {
-  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 5px 0px rgba(17, 21, 28, 0.5);
   display: inline-block;
-  background-color: #adafbc;
+  background-color: #FBFBFB;
   width: 15px;
   height: 15px;
   margin: 0 3px;
+  border-radius: 50%;
+  border: 0.2px solid #11151C;
 }
 .slider-nav a:hover {
-  background-color: #fff;
-  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+  background-color: #11151C;
+  box-shadow: 0px 0px 5px 0px rgaba(#212D40, 0.8);
+}
+
+.pointer {
+  margin: 10px;
+}
+.pointer .w3-left, .pointer .w3-right {
+  cursor: pointer;
+  display: inline-block;
+  color: #11151C;
+  font-size: 30px;
 }
 
 #img2:target .slider-content {
@@ -167,8 +192,4 @@ body {
 
 #img4:target .slider-content {
   transform: translateX(-2400px);
-}
-
-#img5:target .slider-content {
-  transform: translateX(-3200px);
 }
