@@ -101,14 +101,29 @@ body {
 
 header {
   background-color: #11151c;
+}
+header .header__div {
+  background-color: #11151c;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
+}
+header .header__div img {
+  width: 35%;
 }
 
-header img {
-  margin-left: -8%;
-  width: 35%;
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fbfbfb;
+}
+nav a:hover {
+  color: #716969;
 }
 
 footer {
@@ -287,4 +302,55 @@ footer {
 .form__container form textarea::placeholder {
   color: #2d2e2e;
 }
-/*# sourceMappingURL=style.css.map */
+
+.button {
+  color: #fbfbfb;
+  grid-area: submit;
+  background-color: #2d2e2e;
+  border: 3px solid #2d2e2e;
+  text-align: center;
+  padding: 0.6rem 3.2rem;
+  border-radius: 25px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #2d2e2e;
+}
+
+.section__p {
+  margin: 40px auto;
+  width: 400px;
+}
+
+.section__input {
+  text-align: center;
+}
+
+input {
+  border: 1px solid #11151c;
+  padding: 0.6rem 3.2rem;
+  margin-right: 25px;
+  margin-bottom: 40px;
+}
+
+.section--grise {
+  background-color: #716969;
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+.section__signature {
+  width: 20%;
+  margin-right: 35px;
+}
+
+.container--ligne {
+  border-bottom: 2px solid #716969;
+  padding-bottom: 2rem;
+}
+
+.section__flexbox {
+  display: flex;
+  padding: 10px;
+}

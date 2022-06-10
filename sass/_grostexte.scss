@@ -1,0 +1,43 @@
+@use 'variables';
+@use 'button.scss';
+
+.button {
+    @extend %button;
+}
+
+.section__p {
+    margin: 40px auto;
+    width: 400px;
+}
+.section__input {
+    text-align: center;
+}
+
+input {
+    border: 1px solid variables.$color1;
+    padding: 0.6rem 3.2rem;
+    margin-right: 25px;
+    margin-bottom: 40px;
+}
+
+.section--grise {
+    background-color: variables.$color4;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
+.section__signature {
+    width: 20%;
+    margin-right: 35px;
+}
+
+.container--ligne {
+    border-bottom: 2px solid variables.$color4;
+    padding-bottom: 2rem;
+}
+
+.section__flexbox {
+    display: flex;
+    padding: 10px;
+}
