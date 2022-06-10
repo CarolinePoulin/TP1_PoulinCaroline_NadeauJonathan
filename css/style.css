@@ -149,7 +149,7 @@ nav a:hover {
   width: 800px;
   height: 400px;
 }
-.main__slider--content img .img--mySlides {
+.main__slider--content img .mySlides {
   display: none;
 }
 
@@ -195,3 +195,4 @@ nav a:hover {
 #img4:target .main__slider--content {
   transform: translateX(-2400px);
 }
+/*# sourceMappingURL=style.css.map */
