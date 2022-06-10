@@ -101,14 +101,16 @@ body {
 
 header {
   background-color: #11151C;
+}
+header .header__div {
+  background-color: #11151C;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
 }
-header img {
+header .header__div img {
   width: 35%;
-  margin-left: 10px;
 }
 
 nav li {
@@ -124,7 +126,7 @@ nav a:hover {
   color: #716969;
 }
 
-.slider {
+.main__slider {
   width: 800px;
   margin: 30px auto;
   position: relative;
@@ -132,32 +134,32 @@ nav a:hover {
   align-items: center;
 }
 
-.slider-viewport {
+.main__slider--viewport {
   width: 800px;
   height: 400px;
   overflow: hidden;
 }
 
-.slider-content {
+.main__slider--content {
   display: grid;
   grid-auto-flow: column;
   transition: 1s all;
 }
-.slider-content img {
+.main__slider--content img {
   width: 800px;
   height: 400px;
 }
-.slider-content img .myslides {
+.main__slider--content img .img--mySlides {
   display: none;
 }
 
-.slider-nav {
+.main__slider--btnround {
   width: 100%;
   bottom: -30px;
   margin-top: 10px;
   text-align: center;
 }
-.slider-nav a {
+.main__slider--btnround a {
   box-shadow: 5px 5px 5px 0px rgba(17, 21, 28, 0.5);
   display: inline-block;
   background-color: #FBFBFB;
@@ -167,29 +169,29 @@ nav a:hover {
   border-radius: 50%;
   border: 0.2px solid #11151C;
 }
-.slider-nav a:hover {
+.main__slider--btnround a:hover {
   background-color: #11151C;
   box-shadow: 0px 0px 5px 0px rgaba(#212D40, 0.8);
 }
 
-.pointer {
+.main__slider--pointer {
   margin: 10px;
 }
-.pointer .w3-left, .pointer .w3-right {
+.main__slider--pointer .main__slider--left, .main__slider--pointer .main__slider--right {
   cursor: pointer;
   display: inline-block;
   color: #11151C;
   font-size: 30px;
 }
 
-#img2:target .slider-content {
+#img2:target .main__slider--content {
   transform: translateX(-800px);
 }
 
-#img3:target .slider-content {
+#img3:target .main__slider--content {
   transform: translateX(-1600px);
 }
 
-#img4:target .slider-content {
+#img4:target .main__slider--content {
   transform: translateX(-2400px);
 }

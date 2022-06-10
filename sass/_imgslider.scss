@@ -3,19 +3,19 @@
 $slider-width: 800px;
 $slider-height: 400px;
 
-.slider {
+.main__slider {
     width: $slider-width;
     margin: 30px auto;
     position: relative;
     display: flex;
     align-items: center;
 }
-.slider-viewport {
+.main__slider--viewport {
     width: $slider-width;
     height: $slider-height;
     overflow: hidden;
 }
-.slider-content {
+.main__slider--content {
     display: grid;
     grid-auto-flow: column;
     transition: 1s all;
@@ -24,12 +24,12 @@ $slider-height: 400px;
         width: $slider-width;
         height: $slider-height;
 
-        .myslides {
+        .mySlides {
             display: none;
         }
     }
 }
-.slider-nav {
+.main__slider--btnround {
     width: 100%;
     bottom: -30px;
     margin-top: 10px;
@@ -50,10 +50,10 @@ $slider-height: 400px;
     }
 }
 
-.pointer {
+.main__slider--pointer {
     margin: 10px;
 
-    .w3-left, .w3-right {
+    .main__slider--left, .main__slider--right {
         cursor:pointer;
         display: inline-block;
         color: variables.$color1;
@@ -61,7 +61,7 @@ $slider-height: 400px;
     }
 }
 @for $i from 2 to 5 {
-    #img#{$i}:target .slider-content {
+    #img#{$i}:target .main__slider--content {
         transform: translateX(-$slider-width * $i + $slider-width);
     }
 }
