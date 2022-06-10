@@ -317,40 +317,51 @@ footer {
   background-color: #2d2e2e;
 }
 
-.section__p {
-  margin: 40px auto;
-  width: 400px;
+.container--ligne {
+  border-bottom: 2px solid #716969;
+  padding-bottom: 2rem;
 }
 
-.section__input {
+.section__textinput .section__textinput--p {
+  margin: 40px auto;
+  width: 500px;
   text-align: center;
 }
-
-input {
+.section__textinput .section__textinput--input {
+  text-align: center;
+}
+.section__textinput .section__textinput--input input {
   border: 1px solid #11151c;
   padding: 0.6rem 3.2rem;
   margin-right: 25px;
   margin-bottom: 40px;
 }
 
-.signature {
+.section__signature {
   background-color: #716969;
 }
-
-.section--grise {
+.section__signature .section__signature--grise {
   display: flex;
   align-items: center;
   place-content: center;
 }
-
-.section__signature {
+.section__signature .section__signature--img {
   width: 20%;
   margin-right: 35px;
 }
 
-.container--ligne {
-  border-bottom: 2px solid #716969;
-  padding-bottom: 2rem;
+.section__grosTexte {
+  text-align: center;
+}
+.section__grosTexte h1 {
+  font-size: x-large;
+  margin: 40px;
+  text-align: center;
+}
+.section__grosTexte p {
+  text-align: center;
+  margin: 15px auto;
+  width: 600px;
 }
 
 .section__flexbox {
@@ -359,17 +370,16 @@ input {
   justify-content: space-around;
   align-items: flex-start;
 }
-
-.section__flexbox--box {
+.section__flexbox .section__flexbox--box {
   text-align: center;
+  margin: 40px;
 }
-.section__flexbox--box img {
+.section__flexbox .section__flexbox--box img {
   width: 180px;
 }
-
-.section__grosTexte h1 {
-  text-align: center;
+.section__flexbox .section__flexbox--box h2 {
+  margin: 15px;
 }
-.section__grosTexte p {
-  text-align: center;
+.section__flexbox .section__flexbox--box p {
+  margin: 15px;
 }
