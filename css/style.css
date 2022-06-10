@@ -100,12 +100,12 @@ body {
 }
 
 header {
-  background-color: #11151C;
-  border-bottom: 1px solid #2D2E2E;
+  background-color: #11151c;
+  border-bottom: 1px solid #2d2e2e;
   padding: 2rem 0;
 }
 header .header__div {
-  background-color: #11151C;
+  background-color: #11151c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,14 +121,14 @@ nav a {
   display: inline-block;
   padding: 5px 10px;
   text-decoration: none;
-  color: #FBFBFB;
+  color: #fbfbfb;
 }
 nav a:hover {
   color: #716969;
 }
 
 #slider {
-  background-color: #11151C;
+  background-color: #11151c;
   padding: 3rem 0;
 }
 
@@ -169,16 +169,16 @@ nav a:hover {
 .main__slider--btnround a {
   box-shadow: 5px 5px 5px 0px rgba(17, 21, 28, 0.5);
   display: inline-block;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   width: 15px;
   height: 15px;
   margin: 0 3px;
   border-radius: 50%;
-  border: 0.2px solid #11151C;
+  border: 0.2px solid #11151c;
 }
 .main__slider--btnround a:hover {
-  background-color: #11151C;
-  box-shadow: 0px 0px 5px 0px rgaba(#212D40, 0.8);
+  background-color: #11151c;
+  box-shadow: 0px 0px 5px 0px rgaba(#212d40, 0.8);
 }
 
 .main__slider--pointer {
@@ -188,7 +188,7 @@ nav a:hover {
 .main__slider--pointer .main__slider--right {
   cursor: pointer;
   display: inline-block;
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-size: 30px;
 }
 
@@ -202,5 +202,182 @@ nav a:hover {
 
 #img4:target .main__slider--content {
   transform: translateX(-2400px);
+}
+
+footer {
+  background-color: #11151c;
+  color: #fbfbfb;
+  padding-top: 3rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #fbfbfb;
+  padding: 3rem;
+}
+
+.footer__logoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__logoContainer .footer__logo {
+  width: 400px;
+  fill: #fbfbfb;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.footer__link, .footer__link-light {
+  margin: 0 2rem;
+  text-decoration: underline;
+}
+.footer__link:hover, .footer__link-light:hover {
+  color: #fbfbfb;
+}
+.footer__link-light {
+  color: #c8c8c8;
+}
+
+.footer__social {
+  border-top: 2px solid #716969;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__social p {
+  color: #c8c8c8;
+}
+
+.footer__icons {
+  font-size: 1.5rem;
+}
+.footer__icons .footer__icon {
+  margin: 0 0.3rem;
+}
+
+.footer__contact {
+  display: flex;
+}
+.footer__contact .footer__link, .footer__contact .footer__link-light {
+  margin: 0;
+}
+.footer__contact a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.footer__contact a span {
+  text-decoration: underline;
+}
+.footer__contact a:first-child {
+  margin-right: 1rem;
+}
+.footer__contact i {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+}
+
+#contact {
+  background-color: #11151c;
+  color: #fbfbfb;
+  padding-top: 3rem;
+}
+
+.map__container {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.map__container iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.map__container .container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__container {
+  width: 45%;
+  background-color: #212d40;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  border-radius: 25px;
+}
+.form__container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.form__container .form__description {
+  width: 80%;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+.form__container .form__description:last-child {
+  display: inline-block;
+}
+.form__container form {
+  display: grid;
+  grid-template-areas: "nom prenom" "email email" "message message" "obligatoire ." "submit .";
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.form__container form #nom {
+  grid-area: nom;
+}
+.form__container form #prenom {
+  grid-area: prenom;
+}
+.form__container form #email {
+  grid-area: email;
+}
+.form__container form #message {
+  grid-area: message;
+  height: 10rem;
+}
+.form__container form p {
+  grid-area: obligatoire;
+}
+.form__container form .form__button {
+  grid-area: submit;
+  background-color: #716969;
+  border: 3px solid #716969;
+  text-align: center;
+}
+.form__container form .form__button:hover {
+  cursor: pointer;
+  background-color: #2d2e2e;
+}
+.form__container form input,
+.form__container form textarea {
+  background-color: #fbfbfb;
+  padding: 0.6rem 0.6rem;
+}
+.form__container form input::-moz-placeholder, .form__container form textarea::-moz-placeholder {
+  color: #2d2e2e;
+}
+.form__container form input:-ms-input-placeholder, .form__container form textarea:-ms-input-placeholder {
+  color: #2d2e2e;
+}
+.form__container form input::placeholder,
+.form__container form textarea::placeholder {
+  color: #2d2e2e;
 }
 /*# sourceMappingURL=style.css.map */
