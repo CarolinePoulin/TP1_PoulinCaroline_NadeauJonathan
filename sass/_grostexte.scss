@@ -20,8 +20,11 @@ input {
     margin-bottom: 40px;
 }
 
-.section--grise {
+.signature {
     background-color: variables.$color4;
+}
+
+.section--grise {
     display: flex;
     align-items: center;
     place-content: center;
@@ -40,4 +43,23 @@ input {
 .section__flexbox {
     display: flex;
     padding: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.section__flexbox--box {
+    text-align: center;
+
+    img {
+        width: 180px;
+    }
+}
+
+.section__grosTexte {
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
 }

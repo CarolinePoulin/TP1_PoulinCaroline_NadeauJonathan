@@ -333,8 +333,11 @@ input {
   margin-bottom: 40px;
 }
 
-.section--grise {
+.signature {
   background-color: #716969;
+}
+
+.section--grise {
   display: flex;
   align-items: center;
   place-content: center;
@@ -353,4 +356,20 @@ input {
 .section__flexbox {
   display: flex;
   padding: 10px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.section__flexbox--box {
+  text-align: center;
+}
+.section__flexbox--box img {
+  width: 180px;
+}
+
+.section__grosTexte h1 {
+  text-align: center;
+}
+.section__grosTexte p {
+  text-align: center;
 }
