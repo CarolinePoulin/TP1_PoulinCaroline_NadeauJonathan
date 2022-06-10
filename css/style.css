@@ -101,13 +101,14 @@ body {
 
 header {
   background-color: #11151C;
+  border-bottom: 1px solid #2D2E2E;
+  padding: 2rem 0;
 }
 header .header__div {
   background-color: #11151C;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
 }
 header .header__div img {
   width: 35%;
@@ -126,9 +127,14 @@ nav a:hover {
   color: #716969;
 }
 
+#slider {
+  background-color: #11151C;
+  padding: 3rem 0;
+}
+
 .main__slider {
   width: 800px;
-  margin: 30px auto;
+  margin: 0 auto 2rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -144,6 +150,7 @@ nav a:hover {
   display: grid;
   grid-auto-flow: column;
   transition: 1s all;
+  margin: 0 2rem;
 }
 .main__slider--content img {
   width: 800px;
@@ -177,10 +184,11 @@ nav a:hover {
 .main__slider--pointer {
   margin: 10px;
 }
-.main__slider--pointer .main__slider--left, .main__slider--pointer .main__slider--right {
+.main__slider--pointer .main__slider--left,
+.main__slider--pointer .main__slider--right {
   cursor: pointer;
   display: inline-block;
-  color: #11151C;
+  color: #FBFBFB;
   font-size: 30px;
 }
 

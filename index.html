@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>TP1</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="header__div">
-                <div>
-                    <a href="#"><img src="img/logo_x_white-modified.png" alt="logo"></a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Menu 1</a></li>
-                        <li><a href="#">Menu 2</a></li>
-                        <li><a href="#">Menu 3</a></li>
-                        <li><a href="#">Menu 4</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </div>
-        <main>
-            <div class="container">
-            <div class="main__slider">
-                <div class="main__slider--pointer">
-                    <div class="main__slider--left" onclick="plusDivs(-1)">&#10094;</div>
-                </div>
-                <div class="main__slider--viewport">
-                    <div class="main__slider--content">
-                        <img class="mySlides" src="img/Header_RV_Desktop.jpg" alt="Starlink pour camping cars">
-                        <img class="mySlides" src="img/Marketing_LandingEngineered.jpg" alt="Starlink conçu par spacex">
-                        <img class="mySlides" src="img/Marketing_LandingRural_Next.jpg" alt="Starlink résidentiel">
-                        <img class="mySlides" src="img/Premium_Module_03.jpg" alt="Starlink pour entreprise">
-                    </div>
-                </div>
-                <div class="main__slider--pointer">
-                    <div class="main__slider--right" onclick="plusDivs(1)">&#10095;</div>
-                </div>
-            </div>
-            <div class="main__slider--btnround">
-                <a href="#img1" onclick="currentDiv(1)" aria-label="Image défilante de Starlink"></a>
-                <a href="#img2" onclick="currentDiv(2)" aria-label="Image défilante de Starlink"></a>
-                <a href="#img3" onclick="currentDiv(3)" aria-label="Image défilante de Starlink"></a>
-                <a href="#img4" onclick="currentDiv(4)" aria-label="Image défilante de Starlink"></a>
-            </div>
+      <div class="container">
+        <div class="header__div">
+          <div>
+            <a href="#"><img src="img/logo_x_white-modified.png" alt="logo" /></a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Menu 1</a></li>
+              <li><a href="#">Menu 2</a></li>
+              <li><a href="#">Menu 3</a></li>
+              <li><a href="#">Menu 4</a></li>
+            </ul>
+          </nav>
         </div>
-
-        </main>
-        <footer>
-
-        </footer>
-    </div>
-</body>
+      </div>
+    </header>
+    <main>
+      <section id="slider">
+        <div class="container">
+          <div class="main__slider">
+            <div class="main__slider--pointer">
+              <div class="main__slider--left" onclick="plusDivs(-1)">&#10094;</div>
+            </div>
+            <div class="main__slider--viewport">
+              <div class="main__slider--content">
+                <img class="mySlides" src="img/Header_RV_Desktop.jpg" alt="Starlink pour camping cars" />
+                <img class="mySlides" src="img/Marketing_LandingEngineered.jpg" alt="Starlink conçu par spacex" />
+                <img class="mySlides" src="img/Marketing_LandingRural_Next.jpg" alt="Starlink résidentiel" />
+                <img class="mySlides" src="img/Premium_Module_03.jpg" alt="Starlink pour entreprise" />
+              </div>
+            </div>
+            <div class="main__slider--pointer">
+              <div class="main__slider--right" onclick="plusDivs(1)">&#10095;</div>
+            </div>
+          </div>
+          <div class="main__slider--btnround">
+            <a href="#img1" onclick="currentDiv(1)" aria-label="Image défilante de Starlink"></a>
+            <a href="#img2" onclick="currentDiv(2)" aria-label="Image défilante de Starlink"></a>
+            <a href="#img3" onclick="currentDiv(3)" aria-label="Image défilante de Starlink"></a>
+            <a href="#img4" onclick="currentDiv(4)" aria-label="Image défilante de Starlink"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
 <script src="js/script.js"></script>
-
