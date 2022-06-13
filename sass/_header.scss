@@ -1,32 +1,33 @@
 @use 'variables';
-
 header {
+  background-color: variables.$color1;
+  border-bottom: 1px solid variables.$color3;
+  padding: 2rem 0;
+
+  .header__div {
     background-color: variables.$color1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
 
-    .header__div {
-        background-color: variables.$color1;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
-    
-        img {
-            width: 35%;
-        }
+    img {
+      width: 35%;
     }
-}
+  }
 
-nav {
+  nav {
     li {
-        display: inline-block;
+      display: inline-block;
     }
     a {
-        display: inline-block;
-        padding: 5px 10px;
-        text-decoration: none;
-        color: variables.$color5;
+      display: inline-block;
+      padding: 5px 10px;
+      text-decoration: none;
+      color: variables.$color5;
     }
     a:hover {
-        color: variables.$color4;
+      color: variables.$color4;
     }
+  }
 }

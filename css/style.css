@@ -101,6 +101,8 @@ body {
 
 header {
   background-color: #11151c;
+  border-bottom: 1px solid #2d2e2e;
+  padding: 2rem 0;
 }
 header .header__div {
   background-color: #11151c;
@@ -112,18 +114,94 @@ header .header__div {
 header .header__div img {
   width: 35%;
 }
-
-nav li {
+header nav li {
   display: inline-block;
 }
-nav a {
+header nav a {
   display: inline-block;
   padding: 5px 10px;
   text-decoration: none;
   color: #fbfbfb;
 }
-nav a:hover {
+header nav a:hover {
   color: #716969;
+}
+
+#slider {
+  background-color: #11151c;
+  padding: 3rem 0;
+}
+
+.main__slider {
+  width: 800px;
+  margin: 0 auto 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.main__slider--viewport {
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.main__slider--content {
+  display: grid;
+  grid-auto-flow: column;
+  transition: 1s all;
+  margin: 0 2rem;
+}
+.main__slider--content img {
+  width: 800px;
+  height: 400px;
+}
+.main__slider--content img .mySlides {
+  display: none;
+}
+
+.main__slider--btnround {
+  width: 100%;
+  bottom: -30px;
+  margin-top: 10px;
+  text-align: center;
+}
+.main__slider--btnround a {
+  box-shadow: 5px 5px 5px 0px rgba(17, 21, 28, 0.5);
+  display: inline-block;
+  background-color: #fbfbfb;
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+  border-radius: 50%;
+  border: 0.2px solid #11151c;
+}
+.main__slider--btnround a:hover {
+  background-color: #11151c;
+  box-shadow: 0px 0px 5px 0px rgaba(#212d40, 0.8);
+}
+
+.main__slider--pointer {
+  margin: 10px;
+}
+.main__slider--pointer .main__slider--left,
+.main__slider--pointer .main__slider--right {
+  cursor: pointer;
+  display: inline-block;
+  color: #fbfbfb;
+  font-size: 30px;
+}
+
+#img2:target .main__slider--content {
+  transform: translateX(-800px);
+}
+
+#img3:target .main__slider--content {
+  transform: translateX(-1600px);
+}
+
+#img4:target .main__slider--content {
+  transform: translateX(-2400px);
 }
 
 footer {
@@ -383,3 +461,4 @@ footer {
 .section__flexbox .section__flexbox--box p {
   margin: 15px;
 }
+/*# sourceMappingURL=style.css.map */
