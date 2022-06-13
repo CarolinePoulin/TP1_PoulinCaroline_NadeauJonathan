@@ -1,0 +1,34 @@
+@use 'general';
+@use 'variables';
+
+.container--ligne {
+    border-top: 2px solid variables.$color4;
+}
+
+.section__gridContainer {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+        ". img2 img2 . ."
+        "img1 img2 img2 img5 img6"
+        "img1 img3 img4 img4 img6"
+        ". . img4 img4 .";
+
+    .section__gridContainer--img1 {
+        grid-area : img1;
+        align-self: center;} 
+    .section__gridContainer--img2 {
+        grid-area : img2;
+        align-self: stretch;}
+    .section__gridContainer--img3 {grid-area : img3;}
+    .section__gridContainer--img4 {grid-area : img4;}
+    .section__gridContainer--img5 {grid-area : img5;}
+    .section__gridContainer--img6 {
+        grid-area : img6;
+        align-self: center;}
+}
+

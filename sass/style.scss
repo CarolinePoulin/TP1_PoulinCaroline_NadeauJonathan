@@ -1,9 +1,12 @@
-@use './reset';
-@use 'general';
-@use 'variables';
+@use './button';
+@use './contact';
+@use './footer';
+@use './general';
+@use './grid';
+@use './grostexte';
 @use './header';
 @use './imgslider';
-@use './footer';
-@use './_contact';
-@use './button';
-@use './grostexte';
+@use './reset';
+@use './variables';
+
+
