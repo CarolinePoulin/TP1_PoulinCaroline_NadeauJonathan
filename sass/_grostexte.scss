@@ -1,3 +1,4 @@
+@use 'general';
 @use 'variables';
 @use 'button.scss';
 
@@ -6,8 +7,8 @@
 }
 
 .container--ligne {
-    border-bottom: 2px solid variables.$color4;
-    padding-bottom: 2rem;
+    border-top: 2px solid variables.$color4;
+    padding-top: 2rem;
 }
 
 .section__textinput {
@@ -29,7 +30,7 @@
 }
 
 .section__signature {
-    background-color: variables.$color4;
+    background-color: variables.$color2;
 
     .section__signature--grise {
         display: flex;
@@ -38,7 +39,7 @@
     }
     
     .section__signature--img {
-        width: 20%;
+        width: 50%;
         margin-right: 35px;
     }
 }

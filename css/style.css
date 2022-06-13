@@ -1,88 +1,193 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-/***
-    The new CSS reset - version 1.6.0 (last updated 29.4.2022)
-    GitHub page: https://github.com/elad2412/the-new-css-reset
-***/
-/*
-    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
-    - The "symbol *" part is to solve Firefox SVG sprite bug
- */
-*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
+.button {
+  color: #fbfbfb;
+  grid-area: submit;
+  background-color: #716969;
+  border: 3px solid #716969;
+  text-align: center;
+  padding: 0.6rem 3.2rem;
+  border-radius: 25px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #2d2e2e;
 }
 
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+#contact {
+  background-color: #11151c;
+  color: #fbfbfb;
+  padding-top: 3rem;
 }
 
-/* Reapply the pointer cursor for anchor tags */
-a,
-button {
-  cursor: revert;
+.map__container {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.map__container iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.map__container .container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-/* Remove list styles (bullets/numbers) */
-ol,
-ul,
-menu {
-  list-style: none;
+.form__container {
+  width: 45%;
+  background-color: #212d40;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  border-radius: 25px;
+}
+.form__container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.form__container .form__description {
+  width: 80%;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+.form__container .form__description:last-child {
+  display: inline-block;
+}
+.form__container form {
+  display: grid;
+  grid-template-areas: "nom prenom" "email email" "message message" "obligatoire ." "submit .";
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.form__container form #nom {
+  grid-area: nom;
+}
+.form__container form #prenom {
+  grid-area: prenom;
+}
+.form__container form #email {
+  grid-area: email;
+}
+.form__container form #message {
+  grid-area: message;
+  height: 10rem;
+}
+.form__container form p {
+  grid-area: obligatoire;
+}
+.form__container form .form__button {
+  grid-area: submit;
+  background-color: #716969;
+  border: 3px solid #716969;
+  text-align: center;
+}
+.form__container form .form__button:hover {
+  cursor: pointer;
+  background-color: #2d2e2e;
+}
+.form__container form input,
+.form__container form textarea {
+  background-color: #fbfbfb;
+  padding: 0.6rem 0.6rem;
+}
+.form__container form input::-moz-placeholder, .form__container form textarea::-moz-placeholder {
+  color: #2d2e2e;
+}
+.form__container form input:-ms-input-placeholder, .form__container form textarea:-ms-input-placeholder {
+  color: #2d2e2e;
+}
+.form__container form input::placeholder,
+.form__container form textarea::placeholder {
+  color: #2d2e2e;
 }
 
-/* For images to not be able to exceed their container */
-img {
-  max-width: 100%;
+footer {
+  background-color: #11151c;
+  color: #fbfbfb;
+  padding-top: 3rem;
 }
 
-/* removes spacing between cells in tables */
-table {
-  border-collapse: collapse;
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #fbfbfb;
+  padding: 3rem;
 }
 
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-  white-space: revert;
+.footer__logoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__logoContainer .footer__logo {
+  width: 400px;
+  fill: #fbfbfb;
 }
 
-/* minimum style to allow to style meter element */
-meter {
-  -webkit-appearance: revert;
-  -moz-appearance: revert;
-       appearance: revert;
+.footer__links {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
 }
 
-/* reset default text opacity of input placeholder */
-::-moz-placeholder {
-  color: unset;
+.footer__link, .footer__link-light {
+  margin: 0 2rem;
+  text-decoration: underline;
 }
-:-ms-input-placeholder {
-  color: unset;
+.footer__link:hover, .footer__link-light:hover {
+  color: #fbfbfb;
 }
-::placeholder {
-  color: unset;
-}
-
-/* fix the feature of 'hidden' attribute.
-   display:revert; revert to element instead of attribute */
-:where([hidden]) {
-  display: none;
+.footer__link-light {
+  color: #c8c8c8;
 }
 
-/* revert for bug in Chromium browsers
-   - fix for the content editable attribute will work properly. */
-:where([contenteditable]) {
-  -moz-user-modify: read-write;
-  -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
+.footer__social {
+  border-top: 2px solid #716969;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__social p {
+  color: #c8c8c8;
 }
 
-/* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable="true"]) {
-  -webkit-user-drag: element;
+.footer__icons {
+  font-size: 1.5rem;
+}
+.footer__icons .footer__icon {
+  margin: 0 0.3rem;
+}
+
+.footer__contact {
+  display: flex;
+}
+.footer__contact .footer__link, .footer__contact .footer__link-light {
+  margin: 0;
+}
+.footer__contact a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.footer__contact a span {
+  text-decoration: underline;
+}
+.footer__contact a:first-child {
+  margin-right: 1rem;
+}
+.footer__contact i {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
 }
 
 * {
@@ -97,6 +202,109 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
+}
+
+.container--ligne {
+  border-top: 2px solid #716969;
+}
+
+.section__gridContainer {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: ". img2 img2 . ." "img1 img2 img2 img5 img6" "img1 img3 img4 img4 img6" ". . img4 img4 .";
+}
+.section__gridContainer .section__gridContainer--img1 {
+  grid-area: img1;
+  align-self: center;
+}
+.section__gridContainer .section__gridContainer--img2 {
+  grid-area: img2;
+  align-self: stretch;
+}
+.section__gridContainer .section__gridContainer--img3 {
+  grid-area: img3;
+}
+.section__gridContainer .section__gridContainer--img4 {
+  grid-area: img4;
+}
+.section__gridContainer .section__gridContainer--img5 {
+  grid-area: img5;
+}
+.section__gridContainer .section__gridContainer--img6 {
+  grid-area: img6;
+  align-self: center;
+}
+
+.container--ligne {
+  border-top: 2px solid #716969;
+  padding-top: 2rem;
+}
+
+.section__textinput .section__textinput--p {
+  margin: 40px auto;
+  width: 500px;
+  text-align: center;
+}
+.section__textinput .section__textinput--input {
+  text-align: center;
+}
+.section__textinput .section__textinput--input input {
+  border: 1px solid #11151c;
+  padding: 0.6rem 3.2rem;
+  margin-right: 25px;
+  margin-bottom: 40px;
+}
+
+.section__signature {
+  background-color: #212d40;
+}
+.section__signature .section__signature--grise {
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+.section__signature .section__signature--img {
+  width: 50%;
+  margin-right: 35px;
+}
+
+.section__grosTexte {
+  text-align: center;
+}
+.section__grosTexte h1 {
+  font-size: x-large;
+  margin: 40px;
+  text-align: center;
+}
+.section__grosTexte p {
+  text-align: center;
+  margin: 15px auto;
+  width: 600px;
+}
+
+.section__flexbox {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.section__flexbox .section__flexbox--box {
+  text-align: center;
+  margin: 40px;
+}
+.section__flexbox .section__flexbox--box img {
+  width: 180px;
+}
+.section__flexbox .section__flexbox--box h2 {
+  margin: 15px;
+}
+.section__flexbox .section__flexbox--box p {
+  margin: 15px;
 }
 
 header {
@@ -204,261 +412,88 @@ header nav a:hover {
   transform: translateX(-2400px);
 }
 
-footer {
-  background-color: #11151c;
-  color: #fbfbfb;
-  padding-top: 3rem;
+/***
+    The new CSS reset - version 1.6.0 (last updated 29.4.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
 }
 
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-top: 1px solid #fbfbfb;
-  padding: 3rem;
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.footer__logoContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer__logoContainer .footer__logo {
-  width: 400px;
-  fill: #fbfbfb;
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
 }
 
-.footer__links {
-  display: flex;
-  justify-content: center;
-  padding: 3rem;
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
 }
 
-.footer__link, .footer__link-light {
-  margin: 0 2rem;
-  text-decoration: underline;
-}
-.footer__link:hover, .footer__link-light:hover {
-  color: #fbfbfb;
-}
-.footer__link-light {
-  color: #c8c8c8;
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
 }
 
-.footer__social {
-  border-top: 2px solid #716969;
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer__social p {
-  color: #c8c8c8;
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
 }
 
-.footer__icons {
-  font-size: 1.5rem;
-}
-.footer__icons .footer__icon {
-  margin: 0 0.3rem;
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
 }
 
-.footer__contact {
-  display: flex;
-}
-.footer__contact .footer__link, .footer__contact .footer__link-light {
-  margin: 0;
-}
-.footer__contact a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-.footer__contact a span {
-  text-decoration: underline;
-}
-.footer__contact a:first-child {
-  margin-right: 1rem;
-}
-.footer__contact i {
-  font-size: 1.5rem;
-  margin-right: 0.3rem;
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
 }
 
-#contact {
-  background-color: #11151c;
-  color: #fbfbfb;
-  padding-top: 3rem;
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+:-ms-input-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
 }
 
-.map__container {
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-}
-.map__container iframe {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border: none;
-}
-.map__container .container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
 }
 
-.form__container {
-  width: 45%;
-  background-color: #212d40;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  position: relative;
-  z-index: 2;
-  border-radius: 25px;
-}
-.form__container h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.form__container .form__description {
-  width: 80%;
-  margin-bottom: 2rem;
-  font-size: 0.8rem;
-}
-.form__container .form__description:last-child {
-  display: inline-block;
-}
-.form__container form {
-  display: grid;
-  grid-template-areas: "nom prenom" "email email" "message message" "obligatoire ." "submit .";
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-.form__container form #nom {
-  grid-area: nom;
-}
-.form__container form #prenom {
-  grid-area: prenom;
-}
-.form__container form #email {
-  grid-area: email;
-}
-.form__container form #message {
-  grid-area: message;
-  height: 10rem;
-}
-.form__container form p {
-  grid-area: obligatoire;
-}
-.form__container form .form__button {
-  grid-area: submit;
-  background-color: #716969;
-  border: 3px solid #716969;
-  text-align: center;
-}
-.form__container form .form__button:hover {
-  cursor: pointer;
-  background-color: #2d2e2e;
-}
-.form__container form input,
-.form__container form textarea {
-  background-color: #fbfbfb;
-  padding: 0.6rem 0.6rem;
-}
-.form__container form input::-moz-placeholder, .form__container form textarea::-moz-placeholder {
-  color: #2d2e2e;
-}
-.form__container form input:-ms-input-placeholder, .form__container form textarea:-ms-input-placeholder {
-  color: #2d2e2e;
-}
-.form__container form input::placeholder,
-.form__container form textarea::placeholder {
-  color: #2d2e2e;
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly. */
+:where([contenteditable]) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
 }
 
-.button {
-  color: #fbfbfb;
-  grid-area: submit;
-  background-color: #2d2e2e;
-  border: 3px solid #2d2e2e;
-  text-align: center;
-  padding: 0.6rem 3.2rem;
-  border-radius: 25px;
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
 }
-.button:hover {
-  cursor: pointer;
-  background-color: #2d2e2e;
-}
-
-.container--ligne {
-  border-bottom: 2px solid #716969;
-  padding-bottom: 2rem;
-}
-
-.section__textinput .section__textinput--p {
-  margin: 40px auto;
-  width: 500px;
-  text-align: center;
-}
-.section__textinput .section__textinput--input {
-  text-align: center;
-}
-.section__textinput .section__textinput--input input {
-  border: 1px solid #11151c;
-  padding: 0.6rem 3.2rem;
-  margin-right: 25px;
-  margin-bottom: 40px;
-}
-
-.section__signature {
-  background-color: #716969;
-}
-.section__signature .section__signature--grise {
-  display: flex;
-  align-items: center;
-  place-content: center;
-}
-.section__signature .section__signature--img {
-  width: 20%;
-  margin-right: 35px;
-}
-
-.section__grosTexte {
-  text-align: center;
-}
-.section__grosTexte h1 {
-  font-size: x-large;
-  margin: 40px;
-  text-align: center;
-}
-.section__grosTexte p {
-  text-align: center;
-  margin: 15px auto;
-  width: 600px;
-}
-
-.section__flexbox {
-  display: flex;
-  padding: 10px;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-.section__flexbox .section__flexbox--box {
-  text-align: center;
-  margin: 40px;
-}
-.section__flexbox .section__flexbox--box img {
-  width: 180px;
-}
-.section__flexbox .section__flexbox--box h2 {
-  margin: 15px;
-}
-.section__flexbox .section__flexbox--box p {
-  margin: 15px;
-}
-/*# sourceMappingURL=style.css.map */
