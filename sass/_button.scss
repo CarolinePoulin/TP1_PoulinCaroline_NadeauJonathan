@@ -1,0 +1,15 @@
+@use 'variables';
+
+%button {
+    color: variables.$color5;
+    grid-area: submit;
+    background-color: variables.$color3;
+    border: 3px solid variables.$color3;
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+        background-color: variables.$color3;
+    }
+    padding: 0.6rem 3.2rem;
+    border-radius: 25px;
+}

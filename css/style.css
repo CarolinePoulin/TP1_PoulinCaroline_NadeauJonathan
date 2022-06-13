@@ -109,21 +109,21 @@ header .header__div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 header .header__div img {
   width: 35%;
 }
-
-nav li {
+header nav li {
   display: inline-block;
 }
-nav a {
+header nav a {
   display: inline-block;
   padding: 5px 10px;
   text-decoration: none;
   color: #fbfbfb;
 }
-nav a:hover {
+header nav a:hover {
   color: #716969;
 }
 
@@ -379,5 +379,86 @@ footer {
 .form__container form input::placeholder,
 .form__container form textarea::placeholder {
   color: #2d2e2e;
+}
+
+.button {
+  color: #fbfbfb;
+  grid-area: submit;
+  background-color: #2d2e2e;
+  border: 3px solid #2d2e2e;
+  text-align: center;
+  padding: 0.6rem 3.2rem;
+  border-radius: 25px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #2d2e2e;
+}
+
+.container--ligne {
+  border-bottom: 2px solid #716969;
+  padding-bottom: 2rem;
+}
+
+.section__textinput .section__textinput--p {
+  margin: 40px auto;
+  width: 500px;
+  text-align: center;
+}
+.section__textinput .section__textinput--input {
+  text-align: center;
+}
+.section__textinput .section__textinput--input input {
+  border: 1px solid #11151c;
+  padding: 0.6rem 3.2rem;
+  margin-right: 25px;
+  margin-bottom: 40px;
+}
+
+.section__signature {
+  background-color: #716969;
+}
+.section__signature .section__signature--grise {
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+.section__signature .section__signature--img {
+  width: 20%;
+  margin-right: 35px;
+}
+
+.section__grosTexte {
+  text-align: center;
+}
+.section__grosTexte h1 {
+  font-size: x-large;
+  margin: 40px;
+  text-align: center;
+}
+.section__grosTexte p {
+  text-align: center;
+  margin: 15px auto;
+  width: 600px;
+}
+
+.section__flexbox {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.section__flexbox .section__flexbox--box {
+  text-align: center;
+  margin: 40px;
+}
+.section__flexbox .section__flexbox--box img {
+  width: 180px;
+}
+.section__flexbox .section__flexbox--box h2 {
+  margin: 15px;
+}
+.section__flexbox .section__flexbox--box p {
+  margin: 15px;
 }
 /*# sourceMappingURL=style.css.map */
