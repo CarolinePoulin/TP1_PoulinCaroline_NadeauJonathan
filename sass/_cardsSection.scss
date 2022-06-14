@@ -1,0 +1,66 @@
+@use './variables';
+
+#cards {
+  background-color: variables.$color2;
+  color: white;
+  padding: 3rem 0;
+}
+
+.cards__titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 4rem;
+  .cards__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .cards__description {
+    max-width: 60%;
+    text-align: center;
+  }
+}
+
+.cards__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  color: variables.$color5;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+  &:not(:last-child) {
+    border-right: 1px solid variables.$color5;
+  }
+
+  &__imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$color5;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    &--description {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
