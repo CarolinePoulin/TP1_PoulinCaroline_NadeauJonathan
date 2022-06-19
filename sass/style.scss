@@ -1,3 +1,5 @@
+@use './reset';
+@use './variables';
 @use './button';
 @use './contact';
 @use './footer';
@@ -6,8 +8,7 @@
 @use './grostexte';
 @use './header';
 @use './imgslider';
-@use './reset';
+
 @use './statistiques';
-@use './variables';
 
-
+@use './cardsSection';
