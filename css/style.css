@@ -133,6 +133,7 @@ meter {
   position: relative;
   z-index: 2;
   border-radius: 25px;
+  margin-right: 1rem;
 }
 .form__container h2 {
   font-size: 2rem;
@@ -154,9 +155,11 @@ meter {
 }
 .form__container form #nom {
   grid-area: nom;
+  width: 100%;
 }
 .form__container form #prenom {
   grid-area: prenom;
+  width: 100%;
 }
 .form__container form #email {
   grid-area: email;
@@ -194,6 +197,50 @@ meter {
   color: #2d2e2e;
 }
 
+@media (max-width: 1024px) {
+  .form__container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  .form__container .form__description {
+    margin-bottom: 1rem;
+  }
+
+  form {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .map__container {
+    position: static;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .map__container iframe {
+    position: static;
+  }
+
+  .form__container {
+    background-color: inherit;
+    width: 100%;
+  }
+  .form__container form {
+    display: grid !important;
+    grid-template-areas: "nom prenom" "email email" "message message" "obligatoire ." "submit .";
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  #contact {
+    padding-top: 1rem;
+  }
+
+  .form__container form {
+    display: flex !important;
+  }
+}
 footer {
   background-color: #11151c;
   color: #fbfbfb;
@@ -687,7 +734,6 @@ h3 {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 .button {
   margin-top: 20px;
 }
@@ -715,8 +761,6 @@ h3 {
     max-width: 400px;
   }
 }
-=======
->>>>>>> main
 #cards {
   background-color: #212d40;
   color: white;
@@ -782,3 +826,36 @@ h3 {
   flex-direction: column;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 1024px) {
+  .card {
+    align-items: center;
+    text-align: center;
+  }
+  .card__title {
+    font-size: 1.2rem;
+  }
+  .card__description {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .cards__container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-basis: 45%;
+    border: 1px solid #fbfbfb;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #11151c;
+  }
+}
+@media (max-width: 480px) {
+  .cards__container {
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
