@@ -1,4 +1,6 @@
 @use 'variables';
+@use 'mixins';
+
 header {
   background-color: variables.$color1;
   border-bottom: 1px solid variables.$color3;
@@ -10,7 +12,15 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    padding-right: 2em;
 
+    .none {
+      color: variables.$color1;
+    }
+
+    .header__div2 {
+      text-align: center;
+    }
     img {
       width: 35%;
     }
@@ -29,5 +39,54 @@ header {
     a:hover {
       color: variables.$color4;
     }
+  }
+}
+
+@include mixins.respond-to('desktop') {
+
+}
+
+@include mixins.respond-to('tablet') {
+  header {
+    padding: 1.5rem 0;
+    .header__div {
+    height: 20px;
+    }
+  }
+  nav {
+    margin: 0 -1em 0 -2em;
+    a {
+      font-size: 13px;
+    }
+  }
+  .header__div2 {
+    margin: -1.5em;
+  }
+}
+
+@include mixins.respond-to('mobile') {
+  header .header__div .none {
+    color: white;
+  }
+  .dropdown {
+    color: white;
+    position: relative;
+    display: inline-block;
+    span {
+      color: white;
+    }
+  }
+  .dropdown-content {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: variables.$color2;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 10px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
