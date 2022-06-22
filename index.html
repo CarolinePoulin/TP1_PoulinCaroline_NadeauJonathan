@@ -8,15 +8,17 @@
     <title>TP1</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header__div">
-          <div class="header__div2">
-            <a href="#"><img src="img/logo_x_white-modified.png" alt="logo" /></a>
-          </div>
-          <div class="dropdown">
-            <span class="none">Menu</span>
-          <div></div>
+  
+  <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
+  
+  <header>
+    <div class="container">
+      <div class="header__div">
+        <div class="header__div2">
+          <a href="#"><img src="img/logo_x_white-modified.png" alt="logo"></a>
+        </div>
+        <div class="dropdown">
+          <span class="none">Menu</span>
           <nav class="dropdown-content">
             <ul>
               <li><a href="#">Menu 1</a></li>
@@ -27,349 +29,351 @@
           </nav>
         </div>
       </div>
-    </header>
-    <main>
-      <section id="slider">
-        <div class="container">
-          <div class="main__slider">
-            <div class="main__slider--pointer">
-              <div class="main__slider--left" onclick="plusDivs(-1)">&#10094;</div>
-            </div>
-            <div class="main__slider--viewport">
-              <div class="main__slider--content">
-                <img class="mySlides" src="img/Header_RV_Desktop.jpg" alt="Starlink pour camping cars" />
-                <img class="mySlides" src="img/Marketing_LandingEngineered.jpg" alt="Starlink conçu par spacex" />
-                <img class="mySlides" src="img/Marketing_LandingRural_Next.jpg" alt="Starlink résidentiel" />
-                <img class="mySlides" src="img/Premium_Module_03.jpg" alt="Starlink pour entreprise" />
-              </div>
-            </div>
-            <div class="main__slider--pointer">
-              <div class="main__slider--right" onclick="plusDivs(1)">&#10095;</div>
+    </div>
+  </header>
+
+  <main id="content">
+
+    <section id="slider">
+      <div class="container">
+        <div class="main__slider">
+          <div class="main__slider--pointer">
+            <div class="main__slider--left" onclick="plusDivs(-1)">&#10094;</div>
+          </div>
+          <div class="main__slider--viewport">
+            <div class="main__slider--content">
+              <img class="mySlides" src="img/Header_RV_Desktop.jpg" alt="Starlink pour camping cars" />
+              <img class="mySlides" src="img/Marketing_LandingEngineered.jpg" alt="Starlink conçu par spacex" />
+              <img class="mySlides" src="img/Marketing_LandingRural_Next.jpg" alt="Starlink résidentiel" />
+              <img class="mySlides" src="img/Premium_Module_03.jpg" alt="Starlink pour entreprise" />
             </div>
           </div>
-          <div class="main__slider--btnround">
-            <a href="#img1" onclick="currentDiv(1)" aria-label="Image défilante de Starlink"></a>
-            <a href="#img2" onclick="currentDiv(2)" aria-label="Image défilante de Starlink"></a>
-            <a href="#img3" onclick="currentDiv(3)" aria-label="Image défilante de Starlink"></a>
-            <a href="#img4" onclick="currentDiv(4)" aria-label="Image défilante de Starlink"></a>
+          <div class="main__slider--pointer">
+            <div class="main__slider--right" onclick="plusDivs(1)">&#10095;</div>
           </div>
         </div>
-      </section>
-      <section class="section__textinput">
-        <div class="container container--ligne">
-          <div>
-            <p class="section__textinput--p">
-              sweet roll sweet cake water gingerbread donut cheesecake cupcake cheesecake cake powder lollipop.
-            </p>
-            <div class="section__textinput--input">
-              <label for="textinput"></label>
-              <input type="text" id="textinput" placeholder="Text input" />
-              <button class="button">Button</button>
-            </div>
-          </div>
+        <div class="main__slider--btnround">
+          <a href="#img1" onclick="currentDiv(1)" aria-label="Image défilante de Starlink"></a>
+          <a href="#img2" onclick="currentDiv(2)" aria-label="Image défilante de Starlink"></a>
+          <a href="#img3" onclick="currentDiv(3)" aria-label="Image défilante de Starlink"></a>
+          <a href="#img4" onclick="currentDiv(4)" aria-label="Image défilante de Starlink"></a>
         </div>
-      </section>
-      <section class="section__signature">
-        <div class="section__signature--grise">
-          <p class="section__signature--img"><img src="img/Signature-modified.png" /></p>
-          <div>
+      </div>
+    </section>
+
+    <section class="section__textinput">
+      <div class="container container--ligne">
+        <div>
+          <p class="section__textinput--p">
+            sweet roll sweet cake water gingerbread donut cheesecake cupcake cheesecake cake powder lollipop.
+          </p>
+          <div class="section__textinput--input">
+            <label for="textinput"></label>
+            <input type="text" id="textinput" placeholder="Text input" />
             <button class="button">Button</button>
           </div>
         </div>
-      </section>
-      <section>
-        <div class="section__grosTexte">
-          <h1>Gros texte important</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam exercitationem totam omnis, vitae accusantium
-            officiis tempore atque, voluptatibus voluptatem rerum eaque quod. Earum?
+      </div>
+    </section>
+
+    <section class="section__signature">
+      <div class="section__signature--grise">
+        <p class="section__signature--img"><img src="img/Signature-modified.png" alt="image de signature" /></p>
+        <div>
+          <button class="button">Button</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section__grosTexte">
+        <h1>Gros texte important</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam exercitationem totam omnis, vitae accusantium
+          officiis tempore atque, voluptatibus voluptatem rerum eaque quod. Earum?
+        </p>
+      </div>
+      <div class="section__flexbox">
+        <div class="section__flexbox--box">
+          <img src="img/Marketing_LandingFeatured_Mobile_Next1.jpg" alt="landing mobile"/>
+          <h2>Truc un</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, explicabo aspernatur ut fugiat.</p>
+        </div>
+        <div class="section__flexbox--box">
+          <img src="img/Module4_RV1.jpg" alt="landing pour véhicule récréatif"/>
+          <h2>Truc deux</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, explicabo aspernatur ut fugiat.</p>
+        </div>
+        <div class="section__flexbox--box">
+          <img src="img/Marketing_LandingPlugin_Next1.jpg" alt="landing branchement"/>
+          <h2>Truc trois</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, explicabo aspernatur ut fugiat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container container--ligne">
+        <div class="section__gridContainer">
+          <img class="section__gridContainer--img1" src="img/Marketing_LandingPlugin_Next.jpg" alt="landing branchement"/>
+          <img class="section__gridContainer--img2" src="img/Marketing_LandingRural_Next.jpg" alt="landing pour maison"/>
+          <img class="section__gridContainer--img3" src="img/Module4_RV1.jpg" alt="landing pour véhicule récréatif"/>
+          <img class="section__gridContainer--img4" src="img/Header_RV_Desktop.jpg" alt="landing pour ordinateur"/>
+          <img class="section__gridContainer--img5" src="img/Marketing_LandingFeatured_Mobile_Next1.jpg" alt="landing en vedette"/>
+          <img class="section__gridContainer--img6" src="img/Marketing_LandingEngineered.jpg" alt="landing conception"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="cards">
+      <div class="container">
+        <div class="cards__titleContainer">
+          <h2 class="cards__title">Des Cards</h2>
+          <p class="cards__description">
+            Physical space is often conceived in three linear dimensions, although modern physicists usually consider
+            it, with time...
           </p>
         </div>
-        <div class="section__flexbox">
-          <div class="section__flexbox--box">
-            <img src="img/Marketing_LandingFeatured_Mobile_Next1.jpg" />
-            <h2>Truc un</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, explicabo aspernatur ut fugiat.</p>
-          </div>
-          <div class="section__flexbox--box">
-            <img src="img/Module4_RV1.jpg" />
-            <h2>Truc deux</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, explicabo aspernatur ut fugiat.</p>
-          </div>
-          <div class="section__flexbox--box">
-            <img src="img/Marketing_LandingPlugin_Next1.jpg" />
-            <h2>Truc trois</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, explicabo aspernatur ut fugiat.</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container container--ligne">
-          <div class="section__gridContainer">
-            <img class="section__gridContainer--img1" src="img/Marketing_LandingPlugin_Next.jpg" />
-            <img class="section__gridContainer--img2" src="img/Marketing_LandingRural_Next.jpg" />
-            <img class="section__gridContainer--img3" src="img/Module4_RV1.jpg" />
-            <img class="section__gridContainer--img4" src="img/Header_RV_Desktop.jpg" />
-            <img class="section__gridContainer--img5" src="img/Marketing_LandingFeatured_Mobile_Next1.jpg" />
-            <img class="section__gridContainer--img6" src="img/Marketing_LandingEngineered.jpg" />
-          </div>
-        </div>
-      </section>
-
-      <section id="cards">
-        <div class="container">
-          <div class="cards__titleContainer">
-            <h2 class="cards__title">Des Cards</h2>
-            <p class="cards__description">
-              Physical space is often conceived in three linear dimensions, although modern physicists usually consider
-              it, with time...
-            </p>
-          </div>
-          <div class="cards__container">
-            <div class="card">
-              <div class="card__imgContainer">
-                <img src="./img/avatar.png" alt="Leslie Alexander picture" class="card__img" />
-              </div>
-              <div class="card__content">
-                <h3 class="card__title">Leslie Alexander</h3>
-                <p class="card__title--description">Co-founder & CEO</p>
-                <p class="card__description">
-                  Sweet roll sweet roll cake cake wafer gingerbread donut cheesecake. Powder bonbon chupa chups ice
-                  cream jelly-o candy. Fruitcake fruitcake candy drage.
-                </p>
-              </div>
-              <div class="card__icons">
-                <a href="#" class="card__icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="card__icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="card__icon">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
+        <div class="cards__container">
+          <div class="card">
+            <div class="card__imgContainer">
+              <img src="./img/avatar.png" alt="Leslie Alexander picture" class="card__img" />
             </div>
-            <div class="card">
-              <div class="card__imgContainer">
-                <img src="./img/avatar.png" alt="Diane Russel picture" class="card__img" />
-              </div>
-              <div class="card__content">
-                <h3 class="card__title">Dianne Russell</h3>
-                <p class="card__title--description">Co-founder</p>
-                <p class="card__description">
-                  Sweet roll sweet roll cake cake wafer gingerbread donut cheesecake. Powder bonbon chupa chups ice
-                  cream jelly-o candy. Fruitcake fruitcake candy drage.
-                </p>
-              </div>
-              <div class="card__icons">
-                <a href="#" class="card__icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="card__icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="card__icon">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
+            <div class="card__content">
+              <h3 class="card__title">Leslie Alexander</h3>
+              <p class="card__title--description">Co-founder & CEO</p>
+              <p class="card__description">
+                Sweet roll sweet roll cake cake wafer gingerbread donut cheesecake. Powder bonbon chupa chups ice
+                cream jelly-o candy. Fruitcake fruitcake candy drage.
+              </p>
             </div>
-            <div class="card">
-              <div class="card__imgContainer">
-                <img src="./img/avatar.png" alt="Jerome Bell picture" class="card__img" />
-              </div>
-              <div class="card__content">
-                <h3 class="card__title">Jerome Bell</h3>
-                <p class="card__title--description">CTO</p>
-                <p class="card__description">
-                  Sweet roll sweet roll cake cake wafer gingerbread donut cheesecake. Powder bonbon chupa chups ice
-                  cream jelly-o candy. Fruitcake fruitcake candy drage.
-                </p>
-              </div>
-              <div class="card__icons">
-                <a href="#" class="card__icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="card__icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="card__icon">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__imgContainer">
-                <img src="./img/avatar.png" alt="Jane Cooper picture" class="card__img" />
-              </div>
-              <div class="card__content">
-                <h3 class="card__title">Jane Cooper</h3>
-                <p class="card__title--description">SMM</p>
-                <p class="card__description">
-                  Sweet roll sweet roll cake cake wafer gingerbread donut cheesecake. Powder bonbon chupa chups ice
-                  cream jelly-o candy. Fruitcake fruitcake candy drage.
-                </p>
-              </div>
-              <div class="card__icons">
-                <a href="#" class="card__icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="card__icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="card__icon">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
+            <div class="card__icons">
+              <a href="#" class="card__icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="card__icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="card__icon">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-
-
-
-
-
-      <section>
-        <div class="container container--ligne">
-          <div class="statistiques statistiques__column--gap">
-            <div class="satistiques__col1">
-              <img class="statistiques__col1--img" src="img/pie-chart-153903_1280.png">
+          <div class="card">
+            <div class="card__imgContainer">
+              <img src="./img/avatar.png" alt="Diane Russel picture" class="card__img" />
             </div>
-            <div class="statistiques__col2">
-                <h3>Des statistiques</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, explicabo aspernatur ut fugiat.</p>
-                <div class="statistiques__column--gap">
-                  <div class="statistiques__colonne1">
-                    <p class="statistiques__colonne1--chiffre">44M</p>
-                    <p>Sold for</p>
-                  </div>
-                  <div class="statistiques__colonne2">
-                    <p class="statistiques__colonne1--chiffre">324B</p>
-                    <p>Daily content uploaded</p>
-                  </div>
-                </div>
-                <button class="button">View more</button>
+            <div class="card__content">
+              <h3 class="card__title">Dianne Russell</h3>
+              <p class="card__title--description">Co-founder</p>
+              <p class="card__description">
+                Sweet roll sweet roll cake cake wafer gingerbread donut cheesecake. Powder bonbon chupa chups ice
+                cream jelly-o candy. Fruitcake fruitcake candy drage.
+              </p>
+            </div>
+            <div class="card__icons">
+              <a href="#" class="card__icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="card__icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="card__icon">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-
-
-
-
-      <section id="contact">
-        <div class="map__container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13243.168110606872!2d-118.34553390741348!3d33.92075181254701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b5dee46db32d%3A0x5589bf4232c10232!2sSpacex!5e0!3m2!1sfr!2sca!4v1654811513663!5m2!1sfr!2sca"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-
-          <div class="container">
-            <div class="form__container">
-              <h2>Contactez-nous</h2>
-              <p class="form__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-              <form>
-                <label for="nom"></label>
-                <input type="text" id="nom" name="nom" required placeholder="Nom de famille*" />
-
-                <label for="prenom"></label>
-                <input type="text" id="prenom" name="prenom" required placeholder="Prénom*" />
-
-                <label for="email"></label>
-                <input type="email" id="email" name="email" required placeholder="Courriel*" />
-
-                <label for="message"></label>
-                <textarea id="message" name="message" required placeholder="Message*"></textarea>
-                <p>Obligatoire *</p>
-                <input type="submit" value="Submit" class="form__button" />
-              </form>
+          <div class="card">
+            <div class="card__imgContainer">
+              <img src="./img/avatar.png" alt="Jerome Bell picture" class="card__img" />
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Jerome Bell</h3>
+              <p class="card__title--description">CTO</p>
+              <p class="card__description">
+                Sweet roll sweet roll cake cake wafer gingerbread donut cheesecake. Powder bonbon chupa chups ice
+                cream jelly-o candy. Fruitcake fruitcake candy drage.
+              </p>
+            </div>
+            <div class="card__icons">
+              <a href="#" class="card__icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="card__icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="card__icon">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container footer__container">
-        <div class="footer__logoContainer">
-          <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50" class="footer__logo">
-            <title>SpaceX Logo</title>
-            <g class="letter_s">
-              <path
-                class="fill-white"
-                d="M37.5,30.5H10.9v-6.6h34.3c-0.9-2.8-3.8-5.4-8.9-5.4H11.4c-5.7,0-9,2.1-9,6.7v4.9c0,4,3.4,6.3,8.4,6.3h26.9v7H1.5
-              c0.9,3.8,3.8,5.8,9,5.8h27.1c5.7,0,8.5-2.2,8.5-6.9v-4.9C46.1,33.1,42.8,30.8,37.5,30.5z"
-              ></path>
-            </g>
-            <g class="letter_p">
-              <path
-                class="fill-white"
-                d="M91.8,18.6H59v30.7h9.3V37.5h24.2c6.7,0,10.4-2.3,10.4-7.7v-3.4C102.8,21.4,98.6,18.6,91.8,18.6z M94.8,28.4
-              c0,2.2-0.4,3.4-4,3.4H68.3l0.1-8h22c4,0,4.5,1.2,4.5,3.3V28.4z"
-              ></path>
-            </g>
-            <g class="letter_a">
-              <polygon
-                class="fill-white"
-                points="129.9,17.3 124.3,24.2 133.8,37.3 114,37.3 109.1,42.5 137.7,42.5 142.6,49.3 153.6,49.3 	"
-              ></polygon>
-            </g>
-            <g class="letter_c">
-              <path
-                class="fill-white"
-                d="M171.4,23.9h34.8c-0.9-3.6-4.4-5.4-9.4-5.4h-26c-4.5,0-8.8,1.8-8.8,6.7v17.2c0,4.9,4.3,6.7,8.8,6.7h26.3
-              c6,0,8.1-1.7,9.1-5.8h-34.8V23.9z"
-              ></path>
-            </g>
-            <g class="letter_e">
-              <polygon
-                class="fill-white"
-                points="228.3,43.5 228.3,34.1 247,34.1 247,28.9 218.9,28.9 218.9,49.3 260.4,49.3 260.4,43.5 	"
-              ></polygon>
-              <rect class="fill-white" x="219.9" y="18.6" width="41.9" height="5.4"></rect>
-            </g>
-            <g class="letter_x">
-              <path class="fill-white" d="M287.6,18.6H273l17.2,12.6c2.5-1.7,5.4-3.5,8-5L287.6,18.6z"></path>
-              <path class="fill-white" d="M308.8,34.3c-2.5,1.7-5,3.6-7.4,5.4l13,9.5h14.7L308.8,34.3z"></path>
-            </g>
-            <g class="letter_swoosh">
-              <path
-                class="fill-white"
-                d="M399,0.7c-80,4.6-117,38.8-125.3,46.9l-1.7,1.6h14.8C326.8,9.1,384.3,2,399,0.7L399,0.7z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-        <div class="footer__links">
-          <a href="#" class="footer__link-light">About us</a>
-          <a href="#" class="footer__link-light">Features</a>
-          <a href="#" class="footer__link-light">Pricing</a>
-          <a href="#" class="footer__link-light">Career</a>
-          <a href="#" class="footer__link-light">FAQs</a>
-          <a href="#" class="footer__link-light">Privacy policy</a>
-        </div>
-        <div class="footer__social">
-          <p>Fait par : Caroline Poulin et Jonathan Nadeau</p>
-          <div class="footer__icons">
-            <a href="#" class="footer__icon"><i class="fab fa-facebook-square"></i></a>
-            <a href="#" class="footer__icon"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="footer__icon"><i class="fab fa-twitter-square"></i></a>
-            <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
-          </div>
-          <div class="footer__contact">
-            <a href="tel:+1234567890" class="footer__link"
-              ><i class="fa-solid fa-phone"></i><span>123-456-7890</span>
-            </a>
-            <a href="mailto:cegep@troisriviere.ca" class="footer__link"
-              ><i class="fa-solid fa-envelope"></i><span>cegep@troisriviere.ca</span></a
-            >
+          <div class="card">
+            <div class="card__imgContainer">
+              <img src="./img/avatar.png" alt="Jane Cooper picture" class="card__img" />
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Jane Cooper</h3>
+              <p class="card__title--description">SMM</p>
+              <p class="card__description">
+                Sweet roll sweet roll cake cake wafer gingerbread donut cheesecake. Powder bonbon chupa chups ice
+                cream jelly-o candy. Fruitcake fruitcake candy drage.
+              </p>
+            </div>
+            <div class="card__icons">
+              <a href="#" class="card__icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="card__icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="card__icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="js/script.js"></script>
+    </section>
+
+    <section>
+      <div class="container container--ligne">
+        <div class="statistiques statistiques__column--gap">
+          <div class="satistiques__col1">
+            <img class="statistiques__col1--img" src="img/pie-chart-153903_1280.png" alt="diagramme de statistiques">
+          </div>
+          <div class="statistiques__col2">
+              <h3>Des statistiques</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, explicabo aspernatur ut fugiat.</p>
+              <div class="statistiques__column--gap">
+                <div class="statistiques__colonne1">
+                  <p class="statistiques__colonne1--chiffre">44M</p>
+                  <p>Sold for</p>
+                </div>
+                <div class="statistiques__colonne2">
+                  <p class="statistiques__colonne1--chiffre">324B</p>
+                  <p>Daily content uploaded</p>
+                </div>
+              </div>
+              <button class="button">View more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="map__container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13243.168110606872!2d-118.34553390741348!3d33.92075181254701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b5dee46db32d%3A0x5589bf4232c10232!2sSpacex!5e0!3m2!1sfr!2sca!4v1654811513663!5m2!1sfr!2sca"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="container">
+          <div class="form__container">
+            <h2>Contactez-nous</h2>
+            <p class="form__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <form>
+              <label for="nom"></label>
+              <input type="text" id="nom" name="nom" required placeholder="Nom de famille*" />
+
+              <label for="prenom"></label>
+              <input type="text" id="prenom" name="prenom" required placeholder="Prénom*" />
+
+              <label for="email"></label>
+              <input type="email" id="email" name="email" required placeholder="Courriel*" />
+
+              <label for="message"></label>
+              <textarea id="message" name="message" required placeholder="Message*"></textarea>
+              <p>Obligatoire *</p>
+              <input type="submit" value="Submit" class="form__button" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer__container">
+      <div class="footer__logoContainer">
+        <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50" class="footer__logo">
+          <title>SpaceX Logo</title>
+          <g class="letter_s">
+            <path
+              class="fill-white"
+              d="M37.5,30.5H10.9v-6.6h34.3c-0.9-2.8-3.8-5.4-8.9-5.4H11.4c-5.7,0-9,2.1-9,6.7v4.9c0,4,3.4,6.3,8.4,6.3h26.9v7H1.5
+            c0.9,3.8,3.8,5.8,9,5.8h27.1c5.7,0,8.5-2.2,8.5-6.9v-4.9C46.1,33.1,42.8,30.8,37.5,30.5z"
+            ></path>
+          </g>
+          <g class="letter_p">
+            <path
+              class="fill-white"
+              d="M91.8,18.6H59v30.7h9.3V37.5h24.2c6.7,0,10.4-2.3,10.4-7.7v-3.4C102.8,21.4,98.6,18.6,91.8,18.6z M94.8,28.4
+            c0,2.2-0.4,3.4-4,3.4H68.3l0.1-8h22c4,0,4.5,1.2,4.5,3.3V28.4z"
+            ></path>
+          </g>
+          <g class="letter_a">
+            <polygon
+              class="fill-white"
+              points="129.9,17.3 124.3,24.2 133.8,37.3 114,37.3 109.1,42.5 137.7,42.5 142.6,49.3 153.6,49.3 	"
+            ></polygon>
+          </g>
+          <g class="letter_c">
+            <path
+              class="fill-white"
+              d="M171.4,23.9h34.8c-0.9-3.6-4.4-5.4-9.4-5.4h-26c-4.5,0-8.8,1.8-8.8,6.7v17.2c0,4.9,4.3,6.7,8.8,6.7h26.3
+            c6,0,8.1-1.7,9.1-5.8h-34.8V23.9z"
+            ></path>
+          </g>
+          <g class="letter_e">
+            <polygon
+              class="fill-white"
+              points="228.3,43.5 228.3,34.1 247,34.1 247,28.9 218.9,28.9 218.9,49.3 260.4,49.3 260.4,43.5 	"
+            ></polygon>
+            <rect class="fill-white" x="219.9" y="18.6" width="41.9" height="5.4"></rect>
+          </g>
+          <g class="letter_x">
+            <path class="fill-white" d="M287.6,18.6H273l17.2,12.6c2.5-1.7,5.4-3.5,8-5L287.6,18.6z"></path>
+            <path class="fill-white" d="M308.8,34.3c-2.5,1.7-5,3.6-7.4,5.4l13,9.5h14.7L308.8,34.3z"></path>
+          </g>
+          <g class="letter_swoosh">
+            <path
+              class="fill-white"
+              d="M399,0.7c-80,4.6-117,38.8-125.3,46.9l-1.7,1.6h14.8C326.8,9.1,384.3,2,399,0.7L399,0.7z"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <div class="footer__links">
+        <a href="#" class="footer__link-light">About us</a>
+        <a href="#" class="footer__link-light">Features</a>
+        <a href="#" class="footer__link-light">Pricing</a>
+        <a href="#" class="footer__link-light">Career</a>
+        <a href="#" class="footer__link-light">FAQs</a>
+        <a href="#" class="footer__link-light">Privacy policy</a>
+      </div>
+      <div class="footer__social">
+        <p>Fait par : Caroline Poulin et Jonathan Nadeau</p>
+        <div class="footer__icons">
+          <a href="#" class="footer__icon"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" class="footer__icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="footer__icon"><i class="fab fa-twitter-square"></i></a>
+          <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer__contact">
+          <a href="tel:+1234567890" class="footer__link"
+            ><i class="fa-solid fa-phone"></i><span>123-456-7890</span>
+          </a>
+          <a href="mailto:cegep@troisriviere.ca" class="footer__link"
+            ><i class="fa-solid fa-envelope"></i><span>cegep@troisriviere.ca</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
   </body>
 </html>
