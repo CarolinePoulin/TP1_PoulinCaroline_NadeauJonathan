@@ -1,6 +1,7 @@
 @use 'general';
 @use 'variables';
 @use 'button.scss';
+@use 'mixins.scss';
 
 .button {
     @extend %button;
@@ -54,7 +55,7 @@
     p {
         text-align: center;
         margin: 15px auto;
-        width: 600px;
+        max-width: 600px;
     }
 }
 
@@ -79,5 +80,33 @@
         p {
             margin: 15px;
         }
+    }
+}
+
+@include mixins.respond-to('desktop') {
+
+}
+
+@include mixins.respond-to('tablet') {
+    .section__signature--img {
+        max-width: 85%;
+        margin-left: 1em;
+    }
+    .section__flexbox {
+        .section__flexbox--box {
+            margin: 25px;
+        }
+    }
+}
+
+@include mixins.respond-to('mobile') {
+    .button{
+        margin: 0.5em;
+    }
+    .section__textinput .section__textinput--input input{
+        margin-bottom: 20px;
+    }
+    .section__flexbox {
+        display: inline-block;
     }
 }
