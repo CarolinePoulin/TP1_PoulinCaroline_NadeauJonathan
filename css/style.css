@@ -610,10 +610,13 @@ header nav a:hover {
     transform: translateX(-1140px);
   }
 }
+.statistiques {
+  margin-bottom: 2rem;
+}
+
 .statistiques__col1--img {
   width: 70%;
-  display: block;
-  margin: auto;
+  margin: 2rem;
   padding: 3rem 0;
 }
 
@@ -665,6 +668,29 @@ h3 {
   margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .statistiques__col1--img {
+    margin: 1rem;
+  }
+
+  .statistiques__col2 {
+    padding-top: 1rem;
+  }
+
+  .statistiques__column--gap {
+    -moz-column-gap: 0rem;
+         column-gap: 0rem;
+  }
+}
+@media (max-width: 480px) {
+  .statistiques__column--gap {
+    -moz-column-count: 1;
+         column-count: 1;
+    display: inline-block;
+    text-align: center;
+    max-width: 400px;
+  }
+}
 #cards {
   background-color: #212d40;
   color: white;
