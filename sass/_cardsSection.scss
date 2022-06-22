@@ -1,4 +1,5 @@
 @use './variables';
+@use './mixins';
 
 #cards {
   background-color: variables.$color2;
@@ -63,4 +64,38 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+}
+
+@include mixins.respond-to('desktop') {
+  .card {
+    align-items: center;
+    text-align: center;
+    &__title {
+      font-size: 1.2rem;
+    }
+    &__description {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@include mixins.respond-to('tablet') {
+  .cards__container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-basis: 45%;
+    border: 1px solid variables.$color5;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px variables.$color1;
+  }
+}
+
+@include mixins.respond-to('mobile') {
+  .cards__container {
+    flex-direction: column;
+    margin: 0 1rem;
+  }
 }
