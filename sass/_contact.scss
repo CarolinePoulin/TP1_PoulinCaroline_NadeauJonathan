@@ -88,7 +88,8 @@
       background-color: variables.$color4;
       border: 3px solid variables.$color4;
       text-align: center;
-      &:hover {
+      &:hover,
+      &:focus {
         cursor: pointer;
         background-color: variables.$color3;
       }

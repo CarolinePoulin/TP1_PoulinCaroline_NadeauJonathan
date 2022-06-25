@@ -41,7 +41,8 @@ header {
       text-decoration: none;
       color: variables.$color5;
     }
-    a:hover {
+    a:hover,
+    a:focus {
       color: variables.$color4;
     }
   }

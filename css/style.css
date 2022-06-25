@@ -108,7 +108,7 @@ meter {
   padding: 0.6rem 3.2rem;
   border-radius: 25px;
 }
-.button:hover {
+.button:hover, .button:focus {
   cursor: pointer;
   background-color: #2d2e2e;
 }
@@ -195,7 +195,7 @@ meter {
   border: 3px solid #716969;
   text-align: center;
 }
-.form__container form .form__button:hover {
+.form__container form .form__button:hover, .form__container form .form__button:focus {
   cursor: pointer;
   background-color: #2d2e2e;
 }
@@ -294,7 +294,7 @@ footer {
   margin: 0 2rem;
   text-decoration: underline;
 }
-.footer__link:hover, .footer__link-light:hover {
+.footer__link:hover, .footer__link-light:hover, .footer__link:focus, .footer__link-light:focus {
   color: #fbfbfb;
 }
 .footer__link-light {
@@ -318,6 +318,9 @@ footer {
 .footer__icons .footer__icon {
   margin: 0 0.3rem;
 }
+.footer__icons .footer__icon:hover, .footer__icons .footer__icon:focus {
+  color: #716969;
+}
 
 .footer__contact {
   display: flex;
@@ -329,6 +332,9 @@ footer {
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+.footer__contact a:hover, .footer__contact a:focus {
+  color: #716969;
 }
 .footer__contact a span {
   text-decoration: underline;
@@ -600,7 +606,8 @@ header nav a {
   text-decoration: none;
   color: #fbfbfb;
 }
-header nav a:hover {
+header nav a:hover,
+header nav a:focus {
   color: #716969;
 }
 
@@ -702,6 +709,11 @@ header nav a:hover {
   display: inline-block;
   color: #fbfbfb;
   font-size: 30px;
+}
+.main__slider--pointer .main__slider--left:hover, .main__slider--pointer .main__slider--left:focus,
+.main__slider--pointer .main__slider--right:hover,
+.main__slider--pointer .main__slider--right:focus {
+  color: #716969;
 }
 
 #img2:target .main__slider--content {
