@@ -8,4 +8,10 @@ $breakpoints: (
   @media (max-width: map-get($breakpoints, $breakpoint)) {
     @content;
   }
-} ;
+}
+
+@mixin center-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
