@@ -72,6 +72,11 @@ $slider-height-mobile: 200px;
     display: inline-block;
     color: variables.$color5;
     font-size: 30px;
+
+    &:hover,
+    &:focus {
+      color: variables.$color4;
+    }
   }
 }
 

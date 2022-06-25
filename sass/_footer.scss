@@ -34,7 +34,8 @@ footer {
 .footer__link {
   margin: 0 2rem;
   text-decoration: underline;
-  &:hover {
+  &:hover,
+  &:focus {
     color: variables.$color5;
   }
   &-light {
@@ -58,6 +59,10 @@ footer {
   font-size: 1.5rem;
   .footer__icon {
     margin: 0 0.3rem;
+    &:hover,
+    &:focus {
+      color: variables.$color4;
+    }
   }
 }
 
@@ -71,6 +76,10 @@ footer {
     display: flex;
     align-items: center;
     text-decoration: none;
+    &:hover,
+    &:focus {
+      color: variables.$color4;
+    }
     span {
       text-decoration: underline;
     }
