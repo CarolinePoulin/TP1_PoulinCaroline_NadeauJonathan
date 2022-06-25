@@ -8,7 +8,13 @@
 ## Description
 
 Le travail consiste à reproduire une maquette fourni en une page web unique.
-Ce projet porte sur les aspects suivants de l'intégration web : - Formulaire - Méthodologie BEM - Language SASS - Travail d'équipe avec GIT - L'accessibilité web
+Ce projet porte sur les aspects suivants de l'intégration web :
+
+    - Formulaire
+    - Méthodologie BEM
+    - Language SASS
+    - Travail d'équipe avec GIT
+    - L'accessibilité web
 
 ## Technologies utilisées :
 
