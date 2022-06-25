@@ -115,7 +115,6 @@ meter {
 
 #contact {
   background-color: #11151c;
-  color: #fbfbfb;
   padding-top: 3rem;
 }
 
@@ -148,6 +147,7 @@ meter {
   z-index: 2;
   border-radius: 25px;
   margin-right: 1rem;
+  color: #fbfbfb;
 }
 .form__container h2 {
   font-size: 2rem;
@@ -170,17 +170,21 @@ meter {
 .form__container form #nom {
   grid-area: nom;
   width: 100%;
+  color: #11151c;
 }
 .form__container form #prenom {
   grid-area: prenom;
   width: 100%;
+  color: #11151c;
 }
 .form__container form #email {
   grid-area: email;
+  color: #11151c;
 }
 .form__container form #message {
   grid-area: message;
   height: 10rem;
+  color: #11151c;
 }
 .form__container form p {
   grid-area: obligatoire;
