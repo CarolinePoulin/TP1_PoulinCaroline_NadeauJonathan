@@ -1,19 +1,18 @@
-# Travail pratique 1 | Technique d'intégration web 2
+# Travail pratique 2 | Grille et composantes BootStrap
 
-## Équipe de travail :
+## Travail fait par :
 
     - Caroline Poulin
-    - Jonathan Nadeau
 
 ## Description
 
-Le travail consiste à reproduire une maquette fourni en une page web unique.
+Le travail consiste à reproduire une maquette fourni.
 Ce projet porte sur les aspects suivants de l'intégration web :
 
-    - Formulaire
+    - Intégration responsive à l'aide de la grilles Bootstrap
+    - Composantes Bootstrap
     - Méthodologie BEM
-    - Language SASS
-    - Travail d'équipe avec GIT
+    - SASS utilisant Bootstrap
     - L'accessibilité web
 
 ## Technologies utilisées :
@@ -24,10 +23,9 @@ Ce projet porte sur les aspects suivants de l'intégration web :
 
 ## Github du dépo :
 
-https://github.com/CarolinePoulin/TP1_PoulinCaroline_NadeauJonathan
+https://github.com/CarolinePoulin/TP2_PoulinCaroline
 
 ## Pour cloner le projet
 
-```git
-git clone https://github.com/CarolinePoulin/TP1_PoulinCaroline_NadeauJonathan
-```
+git clone https://github.com/CarolinePoulin/TP2_PoulinCaroline
+
